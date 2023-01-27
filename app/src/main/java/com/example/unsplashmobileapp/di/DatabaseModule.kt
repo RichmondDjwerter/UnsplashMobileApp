@@ -21,9 +21,7 @@ object DatabaseModule {
         @ApplicationContext context: Context
     ): UnsplashDatabase {
         return Room.databaseBuilder(
-            context,
-            UnsplashDatabase::class.java,
-            UNSPLASH_DATABASE
+            context, UnsplashDatabase::class.java, UNSPLASH_DATABASE
         ).build()
     }
 }
